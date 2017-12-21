@@ -1,0 +1,5 @@
+# Composer
+vendor/
+
+# Files genereted by tests
+tokens.txt
