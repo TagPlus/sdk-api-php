@@ -136,17 +136,17 @@ class Client extends GuzzleHttp\Client
         if (!$this->credentials) {
             throw new \InvalidArgumentException("You must send an apikey or client_id/client_secret", 1);
         } elseif ( ! (
-            $this->credentials['apikey'] XOR 
+            isset($this->credentials['apikey']) XOR 
                 (
-                    $this->credentials['client_id'] AND 
-                    $this->credentials['client_secret']
+                    isset($this->credentials['client_id']) AND 
+                    isset($this->credentials['client_secret'])
                 )
             )
         ) {
             throw new \InvalidArgumentException("You must use or apikey or oauth2 (client_id/client_secret), but not both", 2);
         }
 
-        if ($this->credentials['apikey']) {
+        if (isset($this->credentials['apikey'])) {
             $this->auth = 'apikey';
         } else {
             $this->auth = 'oauth';
