@@ -133,8 +133,8 @@ Para mais detalhes de quais recursos estão disponíveis acesse nossa [referênc
 
 ## Próximos passos
 
-[ ] Explicar como armazenar os tokens no BD (ex.: MySQL);
-[ ] Explicar como usar a SDK junto com uma framework (ex.: Laravel, CodeIgniter, Symfony, etc...);
-[ ] Recuperar todas as páginas (quando houver) automaticamente;
-[ ] Já retornar a instância do Objeto, sem precisar chamar a função json_decode;
-[ ] Ter métodos para todos os recursos, ao invés de passar a URL como parâmetro (ex.: `$api->getClientes()`).
+- [ ] Explicar como armazenar os tokens no BD (ex.: MySQL);
+- [ ] Explicar como usar a SDK junto com uma framework (ex.: Laravel, CodeIgniter, Symfony, etc...);
+- [ ] Recuperar todas as páginas (quando houver) automaticamente;
+- [ ] Já retornar a instância do Objeto, sem precisar chamar a função json_decode;
+- [ ] Ter métodos para todos os recursos, ao invés de passar a URL como parâmetro (ex.: `$api->getClientes()`).
